@@ -1,17 +1,6 @@
 pipeline {
     agent any
     stages{
-        stage("git repository"){
-            steps{
-                git branch: 'main', credentialsId: 'git-hub', url: 'https://github.com/517002/myjob'
-            }
-       
-        }
-        stage("maven package"){
-            steps{
-                sh 'mvn clean package'
-            }
-        }
         stage("tomcat deploy"){
             steps{
             sshagent(['tomcat']){
