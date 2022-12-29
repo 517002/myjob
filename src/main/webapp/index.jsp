@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2 style="color: green,red,blue">sai is handsome boy!</h2>
+<h2 style="color: green">sai is more handsome then others !</h2>
 </body>
 </html>
